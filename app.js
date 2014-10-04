@@ -30,8 +30,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/mapPage', function(req, res){
-	//res.render();
-	});
+	res.render('mapPage.ejs');
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
