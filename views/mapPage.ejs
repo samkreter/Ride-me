@@ -2,7 +2,11 @@
 <html>
   <head>
     <style type="text/css">
-      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+      html, body { height: 100%; margin: 0; padding: 0;}
+      #map-canvas{
+        height: 60%;
+        margin: 20px;
+      }
     </style>
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz3ZJzghImC8_vAl5cYYewtQyjDY0V6oM">
@@ -12,7 +16,7 @@
         var myLatlng = new google.maps.LatLng(38.945759,-92.335303);
         var mapOptions = {
           center: myLatlng,
-          zoom: 9
+          zoom: 13
         };
         
         var map = new google.maps.Map(document.getElementById('map-canvas'),
