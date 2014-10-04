@@ -8,6 +8,12 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var sql = require('sqlite3');
+
+var dbHandle = sql.openDatabaseSync("example.db");
+
+dbHandle.query("CREATE TABLE foo (a,b,c)");
+console.log(dbHandle.query('select * from foo'));
 
 var app = express();
 
