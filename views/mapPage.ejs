@@ -20,10 +20,22 @@
         var marker = new google.maps.Marker({
           position: myLatlng, 
           map: map,
-          title: 'Sam sucks'
+          title: 'HackMizzou!!!'
+        });
+        var infoOptions = {
+          content:'Fork bomb From Wikipedia, the free encyclopedia \"Rabbit virus\" redirects here. For the disease used in an attempt to exterminate rabbits in Australia, see Myxomatosis \"Wabbit\" redirects here. For the fictional character known as a \"wabbit\", see Bugs Bunny. The concept behind a fork bomb — the processes continually replicate themselves, potentially causing a denial of service In computing, a fork bomb (also called rabbit virus or wabbit[1]) is a denial-of-service attack wherein a process continually replicates itself to deplete available system resources, causing resource starvation and slowing or crashing the system.' 
+        };
+        /*var contentStr = 'Fork bomb From Wikipedia, the free encyclopedia "Rabbit virus" redirects here. For the disease used in an attempt to exterminate rabbits in Australia, see Myxomatosis
+          "Wabbit" redirects here. For the fictional character known as a "wabbit", see Bugs Bunny. 
+          The concept behind a fork bomb — the processes continually replicate themselves, potentially causing a denial of service In computing, a fork bomb (also called rabbit virus or wabbit[1]) is a denial-of-service attack wherein a process continually replicates itself to deplete available system resources, causing resource starvation and slowing or crashing the system.';*/
+
+        var infoWindow = new google.maps.InfoWindow(infoOptions);
+        google.maps.event.addListener(marker, 'click', function(){
+          infoWindow.open(map, marker);
         });
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initialize);
+        
     </script>
   </head>
   <body>
