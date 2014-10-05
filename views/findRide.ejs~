@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
+		<link rel="stylesheet" href="stylesheets/icons.css" />
+		<script src="foundation-5.4.0/js/vendor/modernizr.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<% var template = new EJS({url: '/mytemplate.ejs'}) %>
+
+		<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
+		<script src="foundation-5.4.0/js/foundation.min.js"></script>
+		<script>
+		$(document).foundation();
+		</script>
+	</body>
+</html>			
