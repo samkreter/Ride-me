@@ -172,6 +172,7 @@
 	<script src="foundation-5.4.0/js/foundation.min.js"></script>
 	<script>
 	$(document).foundation();
+		$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
 	</script>
 	</body>
 </html>			

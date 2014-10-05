@@ -8,6 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
+var sql = require('./sql.js');
+
 
 var app = express();
 
@@ -27,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
 app.use(express.errorHandler());
 }
+
 
 app.get('/', routes.index);
 app.get('/landing', function(req, res){res.render('landing.ejs');});
