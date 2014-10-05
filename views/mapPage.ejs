@@ -12,13 +12,14 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz3ZJzghImC8_vAl5cYYewtQyjDY0V6oM">
     </script>
     <script type="text/javascript">
+      
       function initialize() {
         var myLatlng = new google.maps.LatLng(38.945759,-92.335303);
         var mapOptions = {
           center: myLatlng,
           zoom: 13
         };
-        
+        //Initializes 
         var map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
         var marker = new google.maps.Marker({
@@ -29,18 +30,40 @@
         var infoOptions = {
           content:'Fork bomb From Wikipedia, the free encyclopedia \"Rabbit virus\" redirects here. For the disease used in an attempt to exterminate rabbits in Australia, see Myxomatosis \"Wabbit\" redirects here. For the fictional character known as a \"wabbit\", see Bugs Bunny. The concept behind a fork bomb — the processes continually replicate themselves, potentially causing a denial of service In computing, a fork bomb (also called rabbit virus or wabbit[1]) is a denial-of-service attack wherein a process continually replicates itself to deplete available system resources, causing resource starvation and slowing or crashing the system.' 
         };
-        /*var contentStr = 'Fork bomb From Wikipedia, the free encyclopedia "Rabbit virus" redirects here. For the disease used in an attempt to exterminate rabbits in Australia, see Myxomatosis
-          "Wabbit" redirects here. For the fictional character known as a "wabbit", see Bugs Bunny. 
-          The concept behind a fork bomb — the processes continually replicate themselves, potentially causing a denial of service In computing, a fork bomb (also called rabbit virus or wabbit[1]) is a denial-of-service attack wherein a process continually replicates itself to deplete available system resources, causing resource starvation and slowing or crashing the system.';*/
+        
 
         var infoWindow = new google.maps.InfoWindow(infoOptions);
         google.maps.event.addListener(marker, 'click', function(){
           infoWindow.open(map, marker);
         });
-      }
-        google.maps.event.addDomListener(window, 'load', initialize);
         
-    </script>
+        
+        //Will recieve array of users to fill map with
+        var locations = [
+          new google.maps.LatLng(38.951449,-92.336848),
+          new google.maps.LatLng(38.949322,-92.336740),
+          new google.maps.LatLng(38.924328,-92.341826),
+          new google.maps.LatLng(38.929169,-92.345066),
+          new google.maps.LatLng(38.915112,-92.341161),
+          new google.maps.LatLng(38.919904, -92.33517),
+          new google.maps.LatLng(38.914478, -92.352791),
+          new google.maps.LatLng(38.935912, -92.388067)
+        ];
+        var users=[];
+        //Will populate the map with all users at certain time
+        fillMap();
+      function fillMap(){
+        for(var i=0; i<8; i++)
+        {
+          users.push(new google.maps.Marker({
+            position: locations[i],
+            map:map,
+          }));
+        }
+      }
+    }
+      google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
   </head>
   <body>
 <div id="map-canvas"></div>
