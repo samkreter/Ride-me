@@ -31,6 +31,7 @@ app.use(express.errorHandler());
 app.get('/', routes.index);
 app.get('/landing', function(req, res){res.render('landing.ejs');});
 app.get('/profile', function(req, res){res.render('profile.ejs');});
+app.get('/faq', function(req, res){res.render('faq.ejs');});
 app.get('/findRide', function(req, res){res.render('findRide.ejs');});
 
 

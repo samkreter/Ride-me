@@ -17,7 +17,7 @@
 					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 				</ul>
 			
-				<section class="top-bar-section" id="mainnav">				
+				<section class="top-bar-section">				
 					<ul class="right">
 						<li class=""><a class="icon-home" href="landing">Home</a></li>
 						<li class=""><a class=" icon-search-2" href="findRide">Find Rides</a></li>
