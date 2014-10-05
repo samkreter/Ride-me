@@ -1,43 +1,177 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
-    <script src="foundation-5.4.0/js/vendor/modernizr.js"></script>
-	<title></title>
-</head>
-<body>
-	<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">RideMe</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
+		<link rel="stylesheet" href="stylesheets/icons.css" />
+		<script src="foundation-5.4.0/js/vendor/modernizr.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="contain-to-grid sticky">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">Ride.Me</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+		
+			<section class="top-bar-section">				
+				<ul class="right">
+					<li class="active"><a class="icon-home" href="#">Home</a></li>
+					<li class=""><a class=" icon-search-2" href="#">Find Rides</a></li>
+					<li class=""><a class="icon-help" href="#">FAQ</a></li>
+					<li class=""><a href="#" data-reveal-id="myModal" class="icon-user">Sign Up</a></li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+	<br>
+	<div class="row">
+		<div class="small-12 large-5 columns">
+			<h2 class="">Jon Doe</h2>
+			<hr>
+			<div class="row">
+				<div class="small-12 large-5 columns">
+					<img class="panel radius" src="http://fysioprovita.fi/wp-content/uploads/2014/02/placeholder-hi.png" alt="col	">	
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><a href="#">Right Button Active</a></li>
-      <li class="has-dropdown">
-        <a href="#">Right Button Dropdown</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-          <li class="active"><a href="#">Active link in dropdown</a></li>
-        </ul>
-      </li>
-    </ul>
+				</div>
+				<div class="small-12 large-7 columns">
+					<span class="icon-cab">Driver</span><br>		
+					<span class="icon-phone">(555)123-4567</span><br>							
+					<span class="icon-location">Copper Beech</span><br>		
+					<span class="icon-email">jondoe@example.com</span>	
+				</div>
+			</div>	
 
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-    </ul>
-  </section>
-</nav>
-<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
-	    <script src="foundation-5.4.0/js/foundation.min.js"></script>
-	    <script>
-	      $(document).foundation();
-	    </script>
-</body>
+		</div>	
+		<div class="small-12 large-7 columns">
+			<h2 class="">Schedule</h2>
+			<hr>
+				<table>
+				  <thead>
+				    <tr>
+				      <th width="70">Time</th>
+				      <th width="70">Days</th>				      
+				      <th>Class</th>
+				      <th>Location</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>8:00am</td>
+				      <td>MWF</td>
+				      <td>Algorithm Design</td>
+				      <td>EBW 122</td>
+				    </tr>
+				    <tr>
+				      <td>12:15pm</td>
+				      <td>MWF</td>
+				      <td>Science & Engineering of the WWW</td>
+				      <td>Neff 005</td>
+				    </tr>
+  					 <tr>
+				      <td>9:30am</td>
+				      <td>TTH</td>
+				      <td>Database Applications</td>
+				      <td>Laffere C1212</td>
+				    </tr>
+				  </tbody>
+			</table>
+		</div>	
+	</div>
+	
+	<div class="row">
+		<div class="panel radius">
+			<h1>Map Placeholder</h1>			
+		</div>	
+	</div>
+	
+	<div class="row">
+		<hr>
+		<div class="small-12 large-12 columns">
+			<div class="left">
+				<small>This has been a HackMizzou production</small>
+			</div>
+			<div class="right hide-for-small">
+				<a href="#" class="button icon-facebook tiny radius">Facebook</a>
+				<a href="#" class="button icon-twitter tiny radius">Twitter</a>
+				<a href="#" class="button icon-github tiny radius">GitHub</a>		
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+
+<div id="myModal" class="reveal-modal tiny" data-reveal>
+ <h3>Login</h3>
+ <a class="close-reveal-modal">&#215;</a>
+ <form>
+   <div class="row collapse prefix-radius">
+        <div class="small-2 columns"><span class="prefix icon-user"></span></div>
+        <div class="small-10 columns"><input type="text" placeholder="Username"></div>
+   </div>
+   <div class="row collapse prefix-radius">
+        <div class="small-2 columns"><span class="prefix icon-lock-2"></span></div>
+        <div class="small-10 columns"><input type="password" placeholder="Password"></div>
+   </div>
+    <div class="row">
+		<button type="submit" class="button small radius icon-right-2">Login</button>
+   </div>
+ </form>
+</div>
+	
+	<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
+	<script src="foundation-5.4.0/js/foundation.min.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+	</body>
+</html>			
+
+	</div>
+	
+	<div class="row">
+		<hr>
+		<div class="small-12 large-12 columns">
+			<div class="left">
+				<small>This has been a HackMizzou production</small>
+			</div>
+			<div class="right hide-for-small">
+				<a href="#" class="button icon-facebook tiny radius">Facebook</a>
+				<a href="#" class="button icon-twitter tiny radius">Twitter</a>
+				<a href="#" class="button icon-github tiny radius">GitHub</a>		
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+
+<div id="myModal" class="reveal-modal tiny" data-reveal>
+ <h3>Login</h3>
+ <a class="close-reveal-modal">&#215;</a>
+ <form>
+   <div class="row collapse prefix-radius">
+        <div class="small-2 columns"><span class="prefix icon-user"></span></div>
+        <div class="small-10 columns"><input type="text" placeholder="Username"></div>
+   </div>
+   <div class="row collapse prefix-radius">
+        <div class="small-2 columns"><span class="prefix icon-lock-2"></span></div>
+        <div class="small-10 columns"><input type="password" placeholder="Password"></div>
+   </div>
+    <div class="row">
+		<button type="submit" class="button small radius icon-right-2">Login</button>
+   </div>
+ </form>
+</div>
+	
+	<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
+	<script src="foundation-5.4.0/js/foundation.min.js"></script>
+	<script>
+	$(document).foundation();
+	</script>
+	</body>
 </html>			
