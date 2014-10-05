@@ -36,6 +36,8 @@ app.get('/landing', function(req, res){res.render('landing.ejs');});
 app.get('/profile', function(req, res){res.render('profile.ejs');});
 app.get('/faq', function(req, res){res.render('faq.ejs');});
 app.get('/findRide', function(req, res){res.render('findRide.ejs');});
+app.get('/map', function(req, res){res.render('mapPage.ejs')});
+app.get('/mapp', function(req, res){res.render('mapMultiple.ejs')});
 
 
 http.createServer(app).listen(app.get('port'), function(){
