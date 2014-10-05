@@ -8,7 +8,7 @@
 		<title></title>
 	</head>
 	<body>
-		<div class="contain-to-grid sticky">
+				<div class="contain-to-grid sticky">
 		<nav class="top-bar" data-topbar role="navigation">
 			<ul class="title-area">
 				<li class="name">
@@ -16,6 +16,7 @@
 				</li>
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 			</ul>
+		
 			<section class="top-bar-section" id="mainnav">				
 					<ul class="right">
 						<li class=""><a class="icon-home" href="landing">Home</a></li>
@@ -23,7 +24,7 @@
 						<li class=""><a class="icon-help" href="faq">FAQ</a></li>
 						<li class=""><a href="#" data-reveal-id="myModal" class="icon-user">Sign Up</a></li>
 					</ul>
-			</section>
+				</section>
 		</nav>
 	</div>
 	
@@ -44,6 +45,7 @@
 	   </div>
 	 </form>
 	</div>
+		
 	
 	
 	<br>
@@ -53,7 +55,7 @@
 			<hr>
 			<div class="row">
 				<div class="small-12 large-5 columns">
-					<img class="panel radius" src="http://fysioprovita.fi/wp-content/uploads/2014/02/placeholder-hi.png" alt="col	">
+					<img class="panel radius" src="http://fysioprovita.fi/wp-content/uploads/2014/02/placeholder-hi.png" alt="col	">	
 
 				</div>
 				<div class="small-12 large-7 columns">
@@ -63,6 +65,7 @@
 					<span class="icon-email">jondoe@example.com</span>	
 				</div>
 			</div>	
+
 		</div>	
 		<div class="small-12 large-7 columns">
 			<h2 class="">Schedule</h2>
@@ -123,55 +126,12 @@
 	
 	
 
-<div id="myModal" class="reveal-modal tiny" data-reveal>
- <h3>Login</h3>
- <a class="close-reveal-modal">&#215;</a>
- <form>
-   <div class="row collapse prefix-radius">
-        <div class="small-2 columns"><span class="prefix icon-user"></span></div>
-        <div class="small-10 columns"><input type="text" placeholder="Username"></div>
-   </div>
-   <div class="row collapse prefix-radius">
-        <div class="small-2 columns"><span class="prefix icon-lock-2"></span></div>
-        <div class="small-10 columns"><input type="password" placeholder="Password"></div>
-   </div>
-    <div class="row">
-		<button type="submit" class="button small radius icon-right-2">Login</button>
-   </div>
- </form>
-</div>
-	
+
 	<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
 	<script src="foundation-5.4.0/js/foundation.min.js"></script>
 	<script>
 	$(document).foundation();
-	</script>
-	</body>
-</html>			
-
-	</div>
-	
-	<div class="row">
-		<hr>
-		<div class="small-12 large-12 columns">
-			<div class="left">
-				<small>This has been a HackMizzou production</small>
-			</div>
-			<div class="right hide-for-small">
-				<a href="#" class="button icon-facebook tiny radius">Facebook</a>
-				<a href="#" class="button icon-twitter tiny radius">Twitter</a>
-				<a href="#" class="button icon-github tiny radius">GitHub</a>		
-			</div>
-		</div>	
-	</div>
-	
-
-	
-	<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
-	<script src="foundation-5.4.0/js/foundation.min.js"></script>
-	<script>
-	$(document).foundation();
-		$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
+	$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
 	</script>
 	</body>
 </html>			
