@@ -52,3 +52,5 @@ function convertToGeocoder(address)
 
   //return marker;
 });
+
+}
