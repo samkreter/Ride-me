@@ -8,12 +8,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-var sql = require('sqlite3');
+var sql = require('./sql.js');
 
-var dbHandle = sql.openDatabaseSync("example.db");
-
-dbHandle.query("CREATE TABLE foo (a,b,c)");
-console.log(dbHandle.query('select * from foo'));
 
 var app = express();
 
@@ -34,8 +30,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/', function(req, res){
+	sql.test();
+});
+app.get('/2', function(req, res){
+	sql.test2();
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
