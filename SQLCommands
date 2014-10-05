@@ -1,0 +1,12 @@
+//Call to get the correct people on map
+
+SELECT fname, lname, street, city, zipcode, driver
+FROM (person INNER JOIN schedule ON person.id = schedule.personid)
+WHERE schedule.dateTime=%1 && eventTime=%2 ;
+
+//Call to get person info to display on their profile page
+SELECT * FROM person where id=%1;
+
+
+//populate commands
+
