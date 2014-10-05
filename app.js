@@ -33,6 +33,7 @@ app.get('/landing', function(req, res){res.render('landing.ejs');});
 app.get('/profile', function(req, res){res.render('profile.ejs');});
 app.get('/findRide', function(req, res){res.render('findRide.ejs');});
 
+
 http.createServer(app).listen(app.get('port'), function(){
 console.log('Express server listening on port ' + app.get('port'));
 });
