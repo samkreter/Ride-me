@@ -14,9 +14,9 @@ CREATE TABLE person (
 );
 
 
-INSERT INTO person VALUES("Sam","kreter","7600 Twin lake drive","Columbia","65104",1,"270703a6aa55759fac333eea13d8f301",NULL);
-INSERT INTO person VALUES("Paul","Chess","764 lakeword drive","Columbia","65104",0,"270703a6aa55759fac333eea13d8f301",NULL);
-INSERT INTO person VALUES("alfonzo","pressy","7768 dickwood lake","Columbia","65104",1,"270703a6aa55759fac333eea13d8f301",NULL);
+INSERT INTO person VALUES("Sam","kreter","800 Virginia Ave","Columbia","65201",1,"270703a6aa55759fac333eea13d8f301",NULL);
+INSERT INTO person VALUES("Paul","Chess","5003 Commercial Drive","Columbia","65201",0,"270703a6aa55759fac333eea13d8f301",NULL);
+INSERT INTO person VALUES("alfonzo","pressy","2500 Old Highway 63","Columbia","65201",1,"270703a6aa55759fac333eea13d8f301",NULL);
 
 CREATE TABLE schedule(
 	datetime DATETIME,
@@ -25,5 +25,6 @@ CREATE TABLE schedule(
 	FOREIGN KEY(person_id) REFERENCES person(id)
 );
 
-INSERT INTO schedule VALUES('2007-01-01 10:00:00',"funtime",1);
+INSERT INTO schedule VALUES('2007-01-01 09:00:00',"class", 2);
+INSERT INTO schedule VALUES('2007-01-01 09:00:00', "class", 1)
 
