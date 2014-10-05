@@ -7,7 +7,7 @@ var db = new sqlite3.Database(file);
 
 
 
-exports.createTables = function() {
+/*exports.createTables = function() {
     console.log("Created table person");
     db.run("CREATE TABLE person (
 				fname varchar(25),
@@ -24,7 +24,7 @@ exports.createTables = function() {
 			eventName varchar(40),
 			person_id integer,
 			FOREIGN KEY(person_id) REFERENCES person(id))");
-}
+}*/
 
 
 exports.insertUser = function() {
