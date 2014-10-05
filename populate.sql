@@ -14,7 +14,7 @@ CREATE TABLE person (
 );
 
 
-INSERT INTO person VALUES("Sam","kreter","800 Virginia Ave","Columbia","65201",1,"270703a6aa55759fac333eea13d8f301",NULL);
+INSERT INTO person VALUES("Sam","Kreter","800 Virginia Ave","Columbia","65201",1,"270703a6aa55759fac333eea13d8f301",NULL);
 INSERT INTO person VALUES("Paul","Chess","5003 Commercial Drive","Columbia","65201",0,"270703a6aa55759fac333eea13d8f301",NULL);
 INSERT INTO person VALUES("alfonzo","pressy","2500 Old Highway 63","Columbia","65201",1,"270703a6aa55759fac333eea13d8f301",NULL);
 
