@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
+		<link rel="stylesheet" href="stylesheets/icons.css" />
+		<script src="foundation-5.4.0/js/vendor/modernizr.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="contain-to-grid sticky">
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">Ride.Me</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+		
+			<section class="top-bar-section" id="mainnav">				
+					<ul class="right">
+						<li class=""><a class="icon-home" href="landing">Home</a></li>
+						<li class=""><a class=" icon-search-2" href="findRide">Find Rides</a></li>
+						<li class=""><a class="icon-help" href="faq">FAQ</a></li>
+						<li class=""><a href="#" data-reveal-id="myModal" class="icon-user">Sign Up</a></li>
+					</ul>
+				</section>
+		</nav>
+	</div>
+	
+	<div id="myModal" class="reveal-modal tiny" data-reveal>
+	 <h3>Login</h3>
+	 <a class="close-reveal-modal">&#215;</a>
+	 <form>
+	   <div class="row collapse prefix-radius">
+	        <div class="small-2 columns"><span class="prefix icon-user"></span></div>
+	        <div class="small-10 columns"><input type="text" placeholder="Username"></div>
+	   </div>
+	   <div class="row collapse prefix-radius">
+	        <div class="small-2 columns"><span class="prefix icon-lock-2"></span></div>
+	        <div class="small-10 columns"><input type="password" placeholder="Password"></div>
+	   </div>
+	    <div class="row">
+			<button type="submit" class="button small radius icon-right-2">Login</button>
+	   </div>
+	 </form>
+	</div>
+	<br>
+
+
+		<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
+		<script src="foundation-5.4.0/js/foundation.min.js"></script>
+		<script>
+		$(document).foundation();
+		
+		$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
+							
+		</script>
+	</body>
+</html>			

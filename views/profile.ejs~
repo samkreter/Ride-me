@@ -1,21 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-	<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
-    <script src="foundation-5.4.0/js/vendor/modernizr.js"></script>
-	<title>RidewithMe</title>
-</head>
-<body>
-	<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">RideMe</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-=======
 	<head>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
@@ -25,23 +9,24 @@
 	</head>
 	<body>
 		<div class="contain-to-grid sticky">
-		<nav class="top-bar" data-topbar role="navigation">
-			<ul class="title-area">
-				<li class="name">
-					<h1><a href="#">Ride.Me</a></h1>
-				</li>
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-			</ul>
-			<section class="top-bar-section" id="mainnav">				
+			<nav class="top-bar" data-topbar role="navigation">
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href="#">Ride.Me</a></h1>
+					</li>
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+			
+				<section class="top-bar-section">				
 					<ul class="right">
 						<li class=""><a class="icon-home" href="landing">Home</a></li>
 						<li class=""><a class=" icon-search-2" href="findRide">Find Rides</a></li>
 						<li class=""><a class="icon-help" href="faq">FAQ</a></li>
 						<li class=""><a href="#" data-reveal-id="myModal" class="icon-user">Sign Up</a></li>
 					</ul>
-			</section>
-		</nav>
-	</div>
+				</section>
+			</nav>
+		</div>
 	
 	<div id="myModal" class="reveal-modal tiny" data-reveal>
 	 <h3>Login</h3>
@@ -60,8 +45,9 @@
 	   </div>
 	 </form>
 	</div>
-	
-	
+			
+		
+		
 	<br>
 	<div class="row">
 		<div class="small-12 large-5 columns">
@@ -70,7 +56,6 @@
 			<div class="row">
 				<div class="small-12 large-5 columns">
 					<img class="panel radius" src="http://fysioprovita.fi/wp-content/uploads/2014/02/placeholder-hi.png" alt="col	">	
->>>>>>> master
 
 				</div>
 				<div class="small-12 large-7 columns">
@@ -81,21 +66,6 @@
 				</div>
 			</div>	
 
-<<<<<<< HEAD
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-      <li><a href="mapPage">Map Page</a></li>
-    </ul>
-  </section>az
-</nav>
-<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
-	    <script src="foundation-5.4.0/js/foundation.min.js"></script>
-	    <script>
-	      $(document).foundation();
-	    </script>
-</body>
-=======
 		</div>	
 		<div class="small-12 large-7 columns">
 			<h2 class="">Schedule</h2>
@@ -134,6 +104,7 @@
 	</div>
 	
 	<div class="row">
+
 		<div class="panel radius">
 			<h1>Map Placeholder</h1>			
 		</div>	
@@ -171,6 +142,8 @@
     <div class="row">
 		<button type="submit" class="button small radius icon-right-2">Login</button>
    </div>
+
+
  </form>
 </div>
 	
@@ -178,34 +151,7 @@
 	<script src="foundation-5.4.0/js/foundation.min.js"></script>
 	<script>
 	$(document).foundation();
+	$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
 	</script>
 	</body>
-</html>			
-
-	</div>
-	
-	<div class="row">
-		<hr>
-		<div class="small-12 large-12 columns">
-			<div class="left">
-				<small>This has been a HackMizzou production</small>
-			</div>
-			<div class="right hide-for-small">
-				<a href="#" class="button icon-facebook tiny radius">Facebook</a>
-				<a href="#" class="button icon-twitter tiny radius">Twitter</a>
-				<a href="#" class="button icon-github tiny radius">GitHub</a>		
-			</div>
-		</div>	
-	</div>
-	
-
-	
-	<script src="foundation-5.4.0/js/vendor/jquery.js"></script>
-	<script src="foundation-5.4.0/js/foundation.min.js"></script>
-	<script>
-	$(document).foundation();
-		$('#mainnav a[href="' + location.pathname.substring(1) + '"]').parent().addClass('active');
-	</script>
-	</body>
->>>>>>> master
 </html>			
